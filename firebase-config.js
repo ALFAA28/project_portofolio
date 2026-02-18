@@ -6,12 +6,12 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 // Your web app's Firebase configuration
 // TODO: Replace with your actual config from Firebase Console -> Project Settings
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyAgYQFWvMEdLcDSj1uanYmDxF6o1tky9Ns",
+    authDomain: "project-portofolio-62c83.firebaseapp.com",
+    projectId: "project-portofolio-62c83",
+    storageBucket: "project-portofolio-62c83.firebasestorage.app",
+    messagingSenderId: "372517328711",
+    appId: "1:372517328711:web:d1a83655dbd43da630de62"
 };
 
 // Initialize Firebase

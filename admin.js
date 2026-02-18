@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https:/
 import { collection, addDoc, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 // TODO: Replace with your ImgBB API Key
-const IMGBB_API_KEY = "YOUR_IMGBB_API_KEY";
+const IMGBB_API_KEY = "90fe3935e2cc5db120ac9b8bee77e1d1";
 
 // DOM Elements
 const loginSection = document.getElementById('login-section');
