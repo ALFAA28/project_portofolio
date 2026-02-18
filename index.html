@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Fira+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Social Line (Left Sticky) -->
@@ -25,7 +29,7 @@
 
     <!-- Container -->
     <div class="container">
-        
+
         <!-- Navbar -->
         <header>
             <div class="logo">
@@ -33,10 +37,13 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home"><span class="accent">#</span>home</a></li>
-                    <li><a href="#projects"><span class="accent">#</span>works</a></li>
-                    <li><a href="#about-me"><span class="accent">#</span>about-me</a></li>
-                    <li><a href="#contacts"><span class="accent">#</span>contacts</a></li>
+                    <li><a href="#home"><span class="accent">#</span><span data-i18n="nav-home">home</span></a></li>
+                    <li><a href="#projects"><span class="accent">#</span><span data-i18n="nav-works">works</span></a>
+                    </li>
+                    <li><a href="#about-me"><span class="accent">#</span><span data-i18n="nav-about">about-me</span></a>
+                    </li>
+                    <li><a href="#contacts"><span class="accent">#</span><span
+                                data-i18n="nav-contacts">contacts</span></a></li>
                     <li>
                         <select class="lang-switch">
                             <option value="en">EN</option>
@@ -53,9 +60,12 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-text">
-                <h1>Elias is a <span class="text-accent">web designer</span> and <span class="text-accent">front-end developer</span></h1>
-                <p class="hero-sub">He crafts responsive websites where technologies meet creativity</p>
-                <a href="#contacts" class="btn btn-primary">Contact me!!</a>
+                <h1><span data-i18n="hero-title-1">Elias is a</span> <span class="text-accent"
+                        data-i18n="hero-title-2">web designer</span> <span data-i18n="hero-title-3">and</span> <span
+                        class="text-accent" data-i18n="hero-title-4">front-end developer</span></h1>
+                <p class="hero-sub" data-i18n="hero-sub">He crafts responsive websites where technologies meet
+                    creativity</p>
+                <a href="#contacts" class="btn btn-primary" data-i18n="hero-btn">Contact me!!</a>
             </div>
             <div class="hero-image">
                 <!-- Placeholder for Hoodie Guy Image -->
@@ -65,7 +75,7 @@
                 </div>
                 <div class="status-box">
                     <div class="status-dot"></div>
-                    Currently working on <span class="text-white">Portfolio</span>
+                    <span data-i18n="hero-status">Currently working on</span> <span class="text-white">Portfolio</span>
                 </div>
             </div>
         </section>
@@ -82,11 +92,11 @@
         <!-- Projects Section -->
         <section id="projects">
             <div class="section-header">
-                <h2><span class="accent">#</span>projects</h2>
+                <h2><span class="accent">#</span><span data-i18n="nav-projects">projects</span></h2>
                 <div class="line-deco"></div>
-                <a href="#" class="view-all">View all ~~></a>
+                <a href="#" class="view-all" data-i18n="view-all">View all ~~></a>
             </div>
-            
+
             <div class="projects-grid" id="projects-grid">
                 <!-- Projects will be loaded dynamically via JS -->
                 <!-- Loading Skeleton -->
@@ -99,7 +109,7 @@
         <!-- Skills Section -->
         <section id="skills">
             <div class="section-header">
-                <h2><span class="accent">#</span>skills</h2>
+                <h2><span class="accent">#</span><span data-i18n="nav-skills">skills</span></h2>
                 <div class="line-deco"></div>
             </div>
             <div class="skills-content">
@@ -141,28 +151,31 @@
         <!-- About Me Section -->
         <section id="about-me">
             <div class="section-header">
-                <h2><span class="accent">#</span>about-me</h2>
+                <h2><span class="accent">#</span><span data-i18n="nav-about">about-me</span></h2>
                 <div class="line-deco"></div>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="greeting">Hello, I'm Elias!</p>
-                    <p>
-                        I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+                    <p class="greeting" data-i18n="about-greeting">Hello, I'm Elias!</p>
+                    <p data-i18n="about-p1">
+                        I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites
+                        from scratch and raise them into modern user-friendly web experiences.
                     </p>
-                    <p>
-                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+                    <p data-i18n="about-p2">
+                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I
+                        have been helping various clients to establish their presence online. I always strive to learn
+                        about the newest technologies and frameworks.
                     </p>
-                    <a href="#" class="btn btn-primary">Read more -></a>
+                    <a href="#" class="btn btn-primary" data-i18n="about-readmore">Read more -></a>
                 </div>
                 <div class="about-image">
-                     <img src="https://via.placeholder.com/300x400/282C33/FFFFFF?text=About+Image" alt="About Image">
-                     <div class="dots-deco">
+                    <img src="https://via.placeholder.com/300x400/282C33/FFFFFF?text=About+Image" alt="About Image">
+                    <div class="dots-deco">
                         <span></span><span></span><span></span><span></span>
                         <span></span><span></span><span></span><span></span>
                         <span></span><span></span><span></span><span></span>
                         <span></span><span></span><span></span><span></span>
-                     </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -170,15 +183,16 @@
         <!-- Contacts Section -->
         <section id="contacts">
             <div class="section-header">
-                <h2><span class="accent">#</span>contacts</h2>
+                <h2><span class="accent">#</span><span data-i18n="nav-contacts">contacts</span></h2>
                 <div class="line-deco"></div>
             </div>
             <div class="contact-content">
                 <div class="contact-text">
-                    <p>I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me</p>
+                    <p data-i18n="contact-text">I'm interested in freelance opportunities. However, if you have other
+                        request or question, don't hesitate to contact me</p>
                 </div>
                 <div class="contact-box">
-                    <h3>Message me here</h3>
+                    <h3 data-i18n="contact-msg">Message me here</h3>
                     <div class="contact-item">
                         <i class="fab fa-discord"></i> !Elias#3519
                     </div>
@@ -218,4 +232,5 @@
     <!-- Firebase SDKs (Module) -->
     <script type="module" src="script.js"></script>
 </body>
+
 </html>
