@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Elias Portfolio</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Fira+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Styles: Reusing main styles + Admin specific -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Admin Specific Styles */
+        body {
+            padding-top: 50px;
+        }
+
+        .admin-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Login Form */
+        #login-section {
+            max-width: 400px;
+            margin: 100px auto;
+            text-align: center;
+            border: 1px solid var(--accent);
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-family: var(--code-font);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-family: var(--code-font);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* Dashboard */
+        #dashboard-section {
+            display: none;
+        }
+
+        /* Hidden by default */
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .project-list-item {
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-info h4 {
+            margin-bottom: 5px;
+            color: var(--text-primary);
+        }
+
+        .delete-btn {
+            background: transparent;
+            border: 1px solid #e06c75;
+            color: #e06c75;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-family: var(--code-font);
+        }
+
+        .delete-btn:hover {
+            background: rgba(224, 108, 117, 0.1);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .success-msg {
+            color: #98c379;
+            margin-top: 10px;
+            font-family: var(--code-font);
+        }
+
+        .error-msg {
+            color: #e06c75;
+            margin-top: 10px;
+            font-family: var(--code-font);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2><span class="accent">#</span>admin-login</h2>
+            <p style="margin-bottom: 20px;">Access restricted to authorized personnel only.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required placeholder="admin@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" required placeholder="********">
+                </div>
+                <button type="submit" class="btn">Login <~></button>
+                <div id="login-msg"></div>
+            </form>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section">
+            <div class="dashboard-header">
+                <h2><span class="accent">#</span>dashboard</h2>
+                <button id="logout-btn" class="btn btn-outline">Logout</button>
+            </div>
+
+            <!-- Add Project Form -->
+            <section>
+                <h3>Add New Project</h3>
+                <form id="add-project-form">
+                    <div class="form-group">
+                        <label>Project Title</label>
+                        <input type="text" id="p-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Technologies (comma separated)</label>
+                        <input type="text" id="p-tech" placeholder="HTML, CSS, JS" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="p-desc" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Image</label>
+                        <input type="file" id="p-image-file" accept="image/*" required>
+                        <small style="color: grey;">Image will be uploaded to ImgBB.</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Live Link</label>
+                        <input type="url" id="p-live">
+                    </div>
+                    <div class="form-group">
+                        <label>Repo/Cache Link</label>
+                        <input type="url" id="p-repo">
+                    </div>
+                    <button type="submit" class="btn">Add Project <~></button>
+                    <div id="add-msg"></div>
+                </form>
+            </section>
+
+            <!-- Project List -->
+            <section style="margin-top: 50px;">
+                <h3>Existing Projects</h3>
+                <div id="admin-project-list">
+                    <!-- Loaded via JS -->
+                    <p>Loading projects...</p>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Firebase & Logic -->
+    <script type="module" src="admin.js"></script>
+</body>
+
+</html>

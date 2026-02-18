@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias - Web Designer & Front-end Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Social Line (Left Sticky) -->
+    <div class="social-line">
+        <div class="line"></div>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-figma"></i></a>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        
+        <!-- Navbar -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-terminal"></i> Elias
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home"><span class="accent">#</span>home</a></li>
+                    <li><a href="#projects"><span class="accent">#</span>works</a></li>
+                    <li><a href="#about-me"><span class="accent">#</span>about-me</a></li>
+                    <li><a href="#contacts"><span class="accent">#</span>contacts</a></li>
+                    <li>
+                        <select class="lang-switch">
+                            <option value="en">EN</option>
+                            <option value="id">ID</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Elias is a <span class="text-accent">web designer</span> and <span class="text-accent">front-end developer</span></h1>
+                <p class="hero-sub">He crafts responsive websites where technologies meet creativity</p>
+                <a href="#contacts" class="btn btn-primary">Contact me!!</a>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for Hoodie Guy Image -->
+                <div class="img-placeholder">
+                    <img src="https://via.placeholder.com/400x400/282C33/FFFFFF?text=Hero+Image" alt="Hero Image">
+                    <div class="logo-outline"></div>
+                </div>
+                <div class="status-box">
+                    <div class="status-dot"></div>
+                    Currently working on <span class="text-white">Portfolio</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote">
+            <div class="quote-box">
+                <div class="quote-text">"With great power comes great electricity bill"</div>
+                <div class="quote-author">- Dr. Who</div>
+                <div class="quote-icon">”</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <h2><span class="accent">#</span>projects</h2>
+                <div class="line-deco"></div>
+                <a href="#" class="view-all">View all ~~></a>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded dynamically via JS -->
+                <!-- Loading Skeleton -->
+                <div class="project-card skeleton"></div>
+                <div class="project-card skeleton"></div>
+                <div class="project-card skeleton"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <h2><span class="accent">#</span>skills</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-deco">
+                    <!-- Geometric decorations (Shapes) -->
+                    <div class="shape-box"></div>
+                    <div class="shape-dots">
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Skill Boxes -->
+                    <div class="skill-box">
+                        <div class="skill-title">Languages</div>
+                        <div class="skill-list">TypeScript Lua Python JavaScript</div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">Databases</div>
+                        <div class="skill-list">SQLite PostgreSQL Mongo</div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">Tools</div>
+                        <div class="skill-list">VSCode Neovim Linux Figma XFCE Arch Git Font Awesome</div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">Other</div>
+                        <div class="skill-list">HTML CSS EJS SCSS REST Jinja</div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">Frameworks</div>
+                        <div class="skill-list">React Vue Disnake Discord.js Flask Express.js</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me">
+            <div class="section-header">
+                <h2><span class="accent">#</span>about-me</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="greeting">Hello, I'm Elias!</p>
+                    <p>
+                        I'm a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+                    </p>
+                    <p>
+                        Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more -></a>
+                </div>
+                <div class="about-image">
+                     <img src="https://via.placeholder.com/300x400/282C33/FFFFFF?text=About+Image" alt="About Image">
+                     <div class="dots-deco">
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts">
+            <div class="section-header">
+                <h2><span class="accent">#</span>contacts</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me</p>
+                </div>
+                <div class="contact-box">
+                    <h3>Message me here</h3>
+                    <div class="contact-item">
+                        <i class="fab fa-discord"></i> !Elias#3519
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i> elias@elias-dev.ml
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- End Container -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <i class="fas fa-terminal"></i> Elias <span class="email">elias@elias-dev.ml</span>
+                </div>
+                <p>Web designer and front-end developer</p>
+            </div>
+            <div class="footer-right">
+                <h3>Media</h3>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-figma"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © Copyright 2022. Made by Elias
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Firebase SDKs (Module) -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
