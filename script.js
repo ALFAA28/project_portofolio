@@ -58,6 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Language
     const langSwitch = document.querySelector('.lang-switch');
+
+    // Set default to Indonesian
+    langSwitch.value = 'id';
+    updateLanguage('id');
+
     langSwitch.addEventListener('change', (e) => {
         updateLanguage(e.target.value);
     });

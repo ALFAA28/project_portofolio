@@ -126,7 +126,7 @@
         <!-- Login Section -->
         <div id="login-section">
             <h2><span class="accent">#</span>admin-login</h2>
-            <p style="margin-bottom: 20px;">Access restricted to authorized personnel only.</p>
+            <p style="margin-bottom: 20px;">Akses dibatasi hanya untuk personel yang berwenang.</p>
             <form id="login-form">
                 <div class="form-group">
                     <label>Email</label>
@@ -150,44 +150,44 @@
 
             <!-- Add Project Form -->
             <section>
-                <h3>Add New Project</h3>
+                <h3>Tambah Proyek Baru</h3>
                 <form id="add-project-form">
                     <div class="form-group">
-                        <label>Project Title</label>
+                        <label>Judul Proyek</label>
                         <input type="text" id="p-title" required>
                     </div>
                     <div class="form-group">
-                        <label>Technologies (comma separated)</label>
+                        <label>Teknologi (pisahkan dengan koma)</label>
                         <input type="text" id="p-tech" placeholder="HTML, CSS, JS" required>
                     </div>
                     <div class="form-group">
-                        <label>Description</label>
+                        <label>Deskripsi</label>
                         <textarea id="p-desc" rows="3" required></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Project Image</label>
+                        <label>Foto Proyek</label>
                         <input type="file" id="p-image-file" accept="image/*" required>
-                        <small style="color: grey;">Image will be uploaded to ImgBB.</small>
+                        <small style="color: grey;">Gambar akan di-upload ke ImgBB.</small>
                     </div>
                     <div class="form-group">
-                        <label>Live Link</label>
+                        <label>Link Live (Demo)</label>
                         <input type="url" id="p-live">
                     </div>
                     <div class="form-group">
-                        <label>Repo/Cache Link</label>
+                        <label>Link Repo (GitHub)</label>
                         <input type="url" id="p-repo">
                     </div>
-                    <button type="submit" class="btn">Add Project <~></button>
+                    <button type="submit" class="btn">Tambah Proyek <~></button>
                     <div id="add-msg"></div>
                 </form>
             </section>
 
             <!-- Project List -->
             <section style="margin-top: 50px;">
-                <h3>Existing Projects</h3>
+                <h3>Daftar Proyek</h3>
                 <div id="admin-project-list">
                     <!-- Loaded via JS -->
-                    <p>Loading projects...</p>
+                    <p>Memuat proyek...</p>
                 </div>
             </section>
         </div>
